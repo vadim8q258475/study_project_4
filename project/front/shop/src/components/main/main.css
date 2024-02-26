@@ -1,0 +1,529 @@
+.mainContainer{
+}
+.main{
+    display: grid;
+    grid-template: 90px 40px auto 255px / 1fr;
+}
+/*navbar*/
+.link{
+    text-decoration: none;
+    color: black
+}
+.link:hover{
+    color:#bbb9b9;
+}
+.navbarContainer{
+    display: flex;
+    justify-content: center;
+    width: auto;
+    overflow: hidden;
+    background-color: white;
+    z-index: 5;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 90px;
+    background-color: white;
+    z-index: 5;
+    display: block
+}
+.navbarLogoContainer{
+    background-color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.navbarLogo{
+    width: 120px;
+    height: 18.26px;
+}
+.navbarElementsContainer{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.navbarElements{
+    height: 40px;
+    background-color: white;
+    height: 40px;
+    width: 1160px;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.navbarUl{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.navbarLi{
+    display: inline-block;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+}
+.navbarLi:hover{
+    color:#bbb9b9;
+}
+.mainTextLi:hover{
+    color:#bbb9b9;
+}
+.navbarLi:hover {
+    color:#bbb9b9;
+}
+.dropItem{
+    display: inline-block;
+    margin: 0;
+    font-size: 12px;
+    font-weight: 300;
+    cursor: pointer;
+}
+#dropItem1:hover #dropName1{
+    color:#bbb9b9;
+}
+#dropItem2:hover #dropName2{
+    color:#bbb9b9;
+}
+#dropItem3:hover #dropName3{
+    color:#bbb9b9;
+}
+.dropName{
+    display: inline-block;
+}
+.secondNavbar{
+    display: none;
+    justify-content: space-between;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    right: 0px;
+    left: 0px;
+    background-color: white;
+    width: 100%;
+    align-items: center;
+}
+.burgerVector{
+    width: 27px;
+    height: 3.5px;
+    background-color: #000;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+.burgerMenuIcon{
+    cursor: pointer;
+    margin-right: 20px;
+}
+.burgerMenuIcon:hover .burgerVector{
+    margin: 4px 0px;
+}
+.dropUl{
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+.dropLi{
+    margin: 0px;
+    padding: 0px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.dropLi:hover{
+    color:#bbb9b9;
+}
+#dropContent3{
+    width: auto;
+}
+#dropContent2{
+    width: auto
+}
+#dropContent1{
+    width: auto;
+}
+.dropContent{
+    position: absolute;
+    height: auto;
+    display: none;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: white;
+}
+#dropItem1:hover #dropContent1{
+    display: flex;
+}
+#dropItem2:hover #dropContent2{
+    display: flex;
+}
+#dropItem3:hover #dropContent3{
+    display: flex;
+}
+/*navbar*/
+.manyConvert{
+    display: inline-block;
+}
+.searchIconContainer{
+    width: 12px;
+    height: 12px;
+    display: inline-block;
+    margin-right: 20px;
+}
+.searchIcon{
+    width: 100%;
+    height: 100%;
+}
+.mainSearchContainer{
+    position: fixed;
+    z-index: 10;
+    right: 40px;
+    top: 5px;
+    transition: opacity 500ms;
+}
+.arrowDownContainer{
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    margin-left: 2px;
+}
+.arrowDown{
+    width: 100%;
+    height: 100%;
+    transition: rotate 0.3s;
+}
+.arrowDown:hover{
+    rotate: 180deg;
+}
+.fixedBtnCont{
+    height: 200px;
+    width: 80px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    transition: background-color 400ms ease;
+}
+.topBtn{
+    bottom: 160px;
+    cursor: pointer;
+}
+.cartBtn{
+    bottom: 90px;
+    cursor: pointer;
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+}
+.vkBtn{
+    bottom: 20px;
+    cursor: pointer;
+}
+.fixedBtn{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    z-index: 1;
+    background-color: white;
+    right: 20px;
+    border-radius: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+}
+.cartIcon{
+    width: 80%;
+    height: 80%;
+    cursor: pointer;
+    margin-left: 5px;
+}
+.vkIcon{
+    margin-top: 10px;
+    margin-left: 10px;
+    overflow: hidden;
+    width: 60%;
+    height: 50%;
+    cursor: pointer;
+}
+.ikonAnim{
+    transition: background-color 400ms ease;
+    cursor: pointer;
+}
+.ikonAnim:hover{
+    background-color: rgb(182, 178, 178);
+}
+.vkIconImg{
+    margin-top: 15px;
+}
+#topDispBtn{
+    opacity: 0;
+    transition: opacity 500ms;
+}
+.dropItem:hover .arrowDown{
+    rotate: 180deg;
+    filter: invert(0.5);
+}
+.cartCounter{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    background-color: rgb(64, 75, 75);
+    top: 58px;
+    left: 43px;
+    z-index: 4;
+    border-radius: 50%;
+    font-size: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+/*slideBanner*/
+.slideBanner{
+    background-color: black;
+    width: 100%;
+}
+/*slideBanner*/
+
+/*content*/
+.contentContainer{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    width: 1160px;
+    height: auto;
+}
+/*content*/
+
+/*footer*/
+.footerContainer{
+    background-color: black;
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    width: 1160px;
+    padding-left: 16px;
+    padding-right: 16px;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr 1fr;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+.footerCol{
+    
+}
+.footerLogoContainer{
+
+}
+.footerLogo{
+    width: 120px;
+    height: 18.26px;
+    display: block;
+}
+.footerUl{
+
+}
+.footerInfo{
+
+}
+.radiusSocial{
+    border-radius: 100%;
+    background-color: rgb(109, 106, 106);
+    color: black;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    height: 17px;
+    width: 17px;
+    align-content: center;
+    margin-right: 3px;
+    transition: background-color 400ms ease;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.radiusSocial:hover{
+    background-color: white;
+}
+.iconImg{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    align-self: center;
+}
+.footerLogoText{
+    font-size: 12px;
+    color: #525252;
+    font-weight: 300;
+    margin-top: 21px;
+}
+.footerUlHeader{
+    font-size: 14px;
+    color: #525252;
+    margin-bottom: 14px;
+}
+.footerUlElement{
+    font-size: 12px;
+    color: white;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+.footerInfoText{
+    font-size: 12px;
+    color: #525252;
+    font-weight: 300;
+}
+.footerInfoElement{
+    font-size: 12px;
+    color: white;
+    font-weight: 300;
+}
+/*footer*/
+
+.testBlock{
+    
+}
+
+.slideBanner{
+    overflow: hidden;
+}
+/*media*/
+@media (max-width: 1200px){
+    .content{
+        width: 940px;
+        height: auto;
+    }
+    .navbarElements{
+        width: 940px;
+    }
+    .footer{
+        width: 940px;
+    }
+    .footerUlHeader{
+        font-size: 12px;
+    }
+    .footerUlElement{
+        font-size: 10px;
+    }
+    .footerInfoText{
+        font-size: 10px;
+    }
+    .footerInfoElement{
+        font-size: 10px;
+    }
+    .navbarElements ul li{
+        display: inline-block;
+        margin: 0;
+        font-size: 10px;
+        font-weight: 300;
+    }
+}
+@media (max-width: 960px){
+    .content{
+        width: 600px;
+        height: auto;
+    }
+    .mainSearchContainer{
+        display: none;
+    }
+    .navbarElementsContainer{
+        display: none;
+    }
+    .navbarElements{
+        display: none;
+    }
+    .navbarLogoContainer{
+        display: none;
+    }
+    #navbarLogo1{
+        display: none;
+    }
+    .navbar{
+        height: 60px;
+        width: 100%;
+        z-index: 3;
+    }
+    .navbarLogo{
+        margin-left: 20px;
+    }
+    .navbarContainer{
+        width: 100%;
+    }
+    .secondNavbar{
+        display: flex;
+    }
+    .main{
+        grid-template: 60px 40px auto 445px / 1fr;
+    }
+    .footer{
+        width: 600px;
+        grid-template: 1fr 1fr / 1fr 1fr;
+    }
+
+}
+@media (max-width: 420px){
+    .footer{
+        grid-template: 1fr 1fr 1fr 1fr / 1fr ;
+    }
+    .footer{
+        width: 100%;
+    }
+}
+@media (max-width: 660px){
+    .content{
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        height: auto;
+    }
+    .navbarElementsContainer{
+        display: none;
+    }
+    .navbarElements{
+        display: none;
+    }
+    .navbarLogoContainer{
+        display: none;
+    }
+    #navbarLogo1{
+        display: none;
+    }
+    .navbar{
+        height: 60px;
+    }
+    .secondNavbar{
+        display: flex;
+        width: 100%;
+    }
+    .main{
+        grid-template: 60px 40px auto 714px / 1fr;
+    }
+    .footer{
+        padding-top: 45px;
+        padding-bottom: 45px;
+        padding-left: 20px;
+        padding-right: 20px;
+        width: 100%;
+    }
+    .footerUlElement{
+        max-width: 173px;
+    }
+}
+@media (max-width: 315px){
+    
+}
+/*media*/

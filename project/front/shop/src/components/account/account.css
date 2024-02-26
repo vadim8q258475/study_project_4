@@ -1,0 +1,100 @@
+.accountMainContainer{
+    display: grid;
+    grid-template: auto / 400px 760px
+}
+.accountMain{
+    padding-right: 24px;
+}
+.accountAside{
+    padding-left: 24px;
+    overflow: hidden;
+}
+.accountHeader{
+    font-size: 22px;
+    padding-top: 18px;
+    margin-bottom: 5px;
+}
+.accountPath{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    color: #757575;
+    margin-bottom: 20px;
+}
+.accountsmallerHeader{
+    margin-bottom: 10px;
+    padding-top: 25px;
+    font-size: 18px;
+}
+.accountText{
+    font-size: 12px;
+    margin-bottom: 20px;
+    color: #757575
+}
+.accountAsideHeader{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.accountAsideText{
+    font-size: 12px;
+    color: #757575
+}
+.accountAsideTextContainerGrid{
+    margin-bottom: 20px;
+    display: grid;
+    grid-template: auto / 32px auto;
+}
+.accountAsideTextContainer{
+    margin-bottom: 30px;
+}
+.profileInfo{
+    display: grid;
+    grid-template: 1fr 1fr / auto;
+}
+.profileInfoContainer{
+    display: inline-flex;
+    align-items: center;
+    margin-left: 10px;
+}
+@media (max-width: 1200px){
+    .accountMainContainer{
+        display: grid;
+        grid-template: auto / 390px 550px
+    } 
+}
+@media (max-width: 960px){
+    .accountMainContainer{
+        display: grid;
+        grid-template: auto / 300px 300px
+    } 
+
+}
+@media (max-width: 660px){
+    .accountMainContainer{
+        display: grid;
+        grid-template: auto auto / auto
+    } 
+    .accountAside{
+        padding-left: 0px;
+        overflow: hidden;
+    }
+    .accountMain{
+        padding-right: 0px;
+    }
+}
+@media (max-width: 420px){
+    .accountMainContainer{
+        display: grid;
+        grid-template: auto auto / auto
+    } 
+    .accountAside{
+        padding-left: 0px;
+        overflow: hidden;
+    }
+    .accountMain{
+        padding-right: 0px;
+    }
+}
+@media (max-width: 315px){
+    
+}

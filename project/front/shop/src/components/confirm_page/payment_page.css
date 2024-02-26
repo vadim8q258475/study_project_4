@@ -1,0 +1,25 @@
+.activeMethod{
+    box-shadow: 0 0 0 1px #ff8562;
+    border-right: 1px solid #ff8562;
+    border-left: 1px solid #ff8562;
+    border-bottom: 0.5px solid #ff8562;
+    font-weight: 700;
+}
+.smallRadioAcive{
+    width: 9px;
+    height: 9px;
+}
+.RadioAcive{
+    border: 0.5px solid #ff8562;
+}
+.paymentImg{
+    width: 54px;
+    height: 34px;
+    margin: 4px;
+    display: inline-block;
+}
+.paymentImgGroup{
+    margin-right: 21px;
+    display: flex;
+    align-items: center;
+}

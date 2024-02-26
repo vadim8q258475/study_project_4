@@ -1,0 +1,63 @@
+.deliveryMethod{
+    width: 784px;
+    height: 60px;
+    box-shadow: 0 -1px 0 0 #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.deliveryMethod:hover{
+    box-shadow: 0 0 0 1px #ff8562;
+    border-right: 1px solid #ff8562;
+    border-left: 1px solid #ff8562;
+}
+.deliveryMethod:hover .lastDeliveryMethod{
+    border-bottom: 0.5px solid #ff8562;
+}
+.deliveryMethodContainer{
+    margin-bottom: 30px;
+}
+.lastDeliveryMethod{
+    border-bottom: 0.5px solid #e6e6e6;
+}
+.deliveryMethodText{
+    font-size:12px;
+    margin-right: 21px;
+}
+.searchRadioContainer:hover .searchRadioNoHover{
+    border: 0.5px solid rgb(148, 146, 146);
+}
+.deliveryMethod:hover .searchRadio{
+    border: 0.5px solid #ff7e2f;
+}
+.activeBlock{
+    box-shadow: 0 0 0 1px #ff8562;
+    border-left: 1px solid #ff8562;
+    border-right: 1px solid #ff8562;
+    font-weight: 700
+}
+.activeSmallRadio{
+    height: 9px;
+    width: 9px;
+}
+.activeRadio{
+    border: 0.5px solid #ff7e2f;
+}
+@media (max-width: 1200px){
+    .deliveryMethod{
+        width: 599px;
+    }
+}
+@media (max-width: 960px){
+    .deliveryMethod{
+        width: 323px;
+    }
+}
+@media (max-width: 660px){
+    .deliveryMethod{
+        width: 98%;
+        max-width: 576px;
+    }
+}

@@ -1,0 +1,243 @@
+.search{
+
+}
+.searchHeader{
+
+}
+.searchContent{
+    display: grid;
+    grid-template: auto / 250px auto;
+}
+.searchContentAside{
+    width: 250px;
+    height: 250px;
+    padding-top: 20px;
+    display: inline-block;
+}
+.searchContentMain{
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+}
+.searchDropItem{
+    padding: 10px 10px 10px 0px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+.searchDropItem:hover{
+    color: #ff7e2f;
+}
+.searchArrowContainer{
+    width: 10px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 6px;
+}
+.searchDropContent{
+    padding-bottom: 20px;
+}
+.dropMainContainer{
+    overflow: hidden;
+    max-height: 34.4px;
+    transition: max-height 300ms ease;
+}
+.searchArrow{
+    width: 100%;
+    height: 100%;
+    transition: rotate 0.3s;
+}
+.searchFakeInput{
+    width: 240px;
+    height: 30px;
+    border: 1px solid rgb(224, 221, 221);
+    display: flex;
+    align-items: center;
+    transition: 300ms border ease;
+}
+.searchFakeInput:hover{
+    border: 1px solid rgb(0, 0, 0);
+}
+.searchInput{
+    height: 20px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    padding-block: 0;
+    padding-inline: 0;
+    border: none
+}
+.searchInput:focus {
+    outline: none;
+}
+.searchGlassContainer{
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.searchGlass{
+    width: 16.5px;
+    height: 16.5px;
+
+}
+.searchSale{
+    width: 240px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.fakeCheckBox{
+    width: 16px;
+    height: 16px;
+    border-radius: 20%;
+    border: 0.5px solid rgb(148, 146, 146);
+    background-color: rgb(238, 236, 236);
+    transition: 300ms border ease;
+    transition: 300ms background-color ease;
+}
+.searchSale:hover .fakeCheckBox{
+    border: 0.5px solid #ff7e2f;
+}
+.searchSaleText{
+    font-size: 12px;
+    margin-left: 8px;
+}
+.priceInputContainerContainer{
+    display: flex;
+    width: 240px;
+    height: 30px;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.priceInputContainer{
+    width: auto;
+    height: 30px;
+    border: 1px solid rgb(204, 203, 203);
+}
+.priceInput{
+}
+.priceInput{
+    width: 98px;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    padding-block: 0;
+    padding-inline: 0;
+    border: none;
+    margin-left: 8px
+}
+.priceInput:focus{
+    outline: none;
+}
+.searchDash{
+    display: flex;
+    align-items: center;
+}
+.sliderContainer{
+    width: 240px;
+    height: auto;
+    padding: 10px 0px;
+}
+.slider{
+    width: 100%;
+    height: 24px;
+    position: relative;
+}
+.sliderText{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+.sliderInput{
+    position: absolute;
+    width: 100%;
+    top: -13px;
+    background: none;
+    -webkit-appearance: none;
+    pointer-events: none;
+}
+.sliderInput::-webkit-slider-thumb{
+    width: 25px;
+    height: 25px;
+    -webkit-appearance: none;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid #ff7e2f;
+    pointer-events: auto;
+}
+.greyRange{
+    height: 4px;
+    width: 100%;
+    background-color: #BFBFBF;
+    position: relative;
+}
+.progress{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+    background-color: #ff7e2f;
+    height: 4px;
+}
+.searchCategory{
+    height: 25px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.searchCategory:hover .fakeCheckBox{
+    border: 0.5px solid #ff7e2f;
+}
+.searchRadioContainer{
+    width: 100%;
+    height: 27px;
+    display: flex;
+    align-items: center;
+}
+.searchRadioContainer:hover .searchRadio{
+    border: 0.5px solid #ff7e2f;
+}
+.searchRadio{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    border: 0.5px solid rgb(148, 146, 146);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ff7e2f;
+    cursor: pointer;
+}   
+.smallSearchRadio{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: white;
+    transition: 300ms all ease;
+}
+
+.searchRadioText{
+   font-size: 12px;
+   margin-left: 8px;
+   display: inline-block;
+   cursor: pointer;
+}
+@media (max-width: 1200px){
+    
+}
+@media (max-width: 960px){
+    .searchContentMain{
+        display: grid;
+        grid-template: 1fr / 1fr 1fr;
+    }
+}
+@media (max-width: 660px){
+    .searchContentMain{
+        display: grid;
+        grid-template: 1fr / 1fr;
+    }
+}

@@ -1,0 +1,75 @@
+.dropNavbar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: none;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 500ms ease;
+}
+.dropNavbarHeader{
+    height: 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.dropNavbarItem{
+    height: 35px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+}
+.dropNavbarHeaderImg{
+    width: 120px;
+    height: 18.26px;
+}
+.radiusSocial1{
+    margin-top: 200px;
+    border-radius: 100%;
+    background-color: rgb(0, 0, 0);
+    color: black;
+    font-size: 14px;
+    display: inline-block;
+    text-align: center;
+    justify-content: center;
+    padding: 5px;
+    height: 20px;
+    width: 20px;
+    align-content: center;
+    margin-right: 7px;
+    transition: background-color 400ms ease;
+    cursor: pointer;
+    margin-top: 30px;
+}
+.radiusSocial1:hover{
+    background-color: white;
+}
+.iconImg1{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    align-self: center;
+    filter: invert(1);
+}
+.radiusSocialContainer1{
+    margin-top: 170px;
+    margin-left: 20px;
+}
+.dropNavbarCrossImg{
+    width: 20px;
+    height: 20px;
+}
+.dropNavbarArrow{
+    width: 10px;
+    height: 10px;
+    rotate: -90deg;
+}
+@media (max-width: 1000px){
+    .dropNavbar{
+        display: none;
+    }
+}

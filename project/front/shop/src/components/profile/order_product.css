@@ -1,0 +1,22 @@
+.orderProductContainer{
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template: 1fr/ 100px auto;
+    margin-bottom: 10px;
+}
+.orderProductImgNew{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.orderProductInfo{
+    display: inline-block;
+    padding-top: 7px;
+}
+.orderProductText{
+    font-size: 12px;
+}
+.grey{
+    color: #757575
+}

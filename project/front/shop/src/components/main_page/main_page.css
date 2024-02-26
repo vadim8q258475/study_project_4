@@ -1,0 +1,200 @@
+.content12{
+    width: 1160px;
+    height: auto;
+}
+.mainPageProductsContainer12{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+    overflow: hidden;
+    width: 100%;
+}
+.smallerPhotoOnLineContainer12{
+    width: 50%;
+    height: 480px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.mainPhotoGroup12{
+    overflow: hidden;
+    width: 100%;
+}
+.opacityDivTextContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 100%;
+}
+
+
+
+.opacityDivText{
+    opacity: 0;
+    position: absolute;
+    color:rgb(255, 255, 255);
+    font-weight: 700;
+    font-size: 20px;
+    z-index: 20;
+    transition: all 300ms ease;
+}
+
+
+
+.onePhotoOnLineContainer12{
+    display: flex;
+    width: 100%;
+    height: 450px;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+.mainPageHeader12{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 23px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.collectionsList{
+    display: grid;
+    grid-template: 1fr / auto auto auto auto;
+    margin-bottom: 30px;
+}
+.collectionsListElem{
+    padding: 10px;
+
+}
+.collectionsListElemImgContainer{
+    overflow: hidden;
+    position: relative;
+    border: 1px solid #757575;
+}
+.collectionsListElemImg{
+    height: 100%;
+    width: 100%;
+    transition: all 400ms ease;
+    transform: scale(1.05);
+}
+
+.collectionsListElemImg:hover{
+   transform: scale(1.2);
+}
+.collectionsListElemImgText {
+    position: absolute;
+    color: rgb(255, 255, 255);
+    bottom: 20px;
+    left: 0px;
+    font-size: 18px;
+    font-weight: 700;
+    width: 100%;
+}
+.collectionsListElemImgTextInner{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+.viewAllBtnContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.viewAllBtn{
+    width: 170px;
+    height: 40px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-family: 'RF Dewi';
+    margin-bottom: 48px;
+    cursor: pointer;
+}
+.mainPageProductsH{
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 23px;
+    color: black
+}
+.containerForBlik{
+    position: relative;
+    overflow: hidden;
+    height: 40px;
+}
+.blik{
+    position: absolute;
+    z-index: 5;
+    opacity: 0.5;
+    left: -50px;
+    top: -30px;
+    width: 40px;
+    height: 100px;
+    background: white;
+    rotate: 45deg;
+}
+.innerForBlik{
+    animation: blikAnimation 1000ms ease ;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+}
+@keyframes blikAnimation{
+    from {
+        transform: translateX(0px);
+    }
+  
+    to {
+        transform: translateX(400px);
+    }
+  }
+.opacityDiv{
+    background-color: black;
+    opacity: 0.0;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all 300ms ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black
+}
+@media (max-width: 1200px){
+    .onePhotoOnLineContainer12{
+        height: 400px;
+        width: 960px;
+    }
+}
+@media (max-width: 960px){
+    .onePhotoOnLineContainer12{
+        height: 350px;
+        width: 660px;
+    }
+}
+@media (max-width: 660px){
+    .onePhotoOnLineContainer12{
+        height: 300px;
+        width: 360px;
+    }
+    .collectionsList{
+        display: grid;
+        grid-template: 1fr / auto auto;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 315px){
+    .collectionsList{
+        display: grid;
+        grid-template: 1fr / auto;
+        margin-bottom: 30px;
+    }
+}
+
+ 
+

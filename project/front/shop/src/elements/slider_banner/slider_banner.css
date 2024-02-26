@@ -1,0 +1,16 @@
+
+.scrolling-image {
+  background: url("C:/Users/Вадим/Desktop/project/front/shop/src/media/slider24.png") repeat-x;
+  height: 40px;
+  width: 7680px;
+  animation: slide 65s linear infinite;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-3840px); /* The image width */
+  }
+}

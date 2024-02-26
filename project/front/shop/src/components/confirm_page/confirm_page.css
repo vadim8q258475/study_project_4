@@ -1,0 +1,132 @@
+.cartMainContainer1{
+    display: grid;
+    grid-template: auto / 350px 810px
+}
+.cartMain1{
+    width: 320px;
+}
+
+.emailSuccesContainer{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.emailSuccesContainer:hover .changeField{
+    color:#ff7e2f
+}
+.emailSuccesContainer:hover .emailSuccesText{
+    color:#ff7e2f
+}
+.changeField{
+    transition: color 400ms ease;
+}
+.emailSuccesImg{
+    width: 18px;
+    height: 18px;
+    margin-right: 8px;
+}
+.emailSuccesText{
+    transition: color 400ms ease;
+    font-size: 12px;
+    margin-bottom: 12px;
+    margin-top: 12px;
+}
+.confirmPageText{
+    font-size: 12px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+.deliveryHeader{
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.deliverysubHeader{
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #757575;
+}
+.deliveryBlocksContainer{
+    height: 110px;
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.deliveryBlock{
+    border: 1px solid rgb(174, 169, 169);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.deliveryBlock:hover{
+    border: 1px solid #ff7e2f;
+    background-color: rgba(255,133,98,0.07);
+}
+.confirmInputHeader{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 12px;
+}
+.confirmPageInputGroup{
+    display: grid;
+    grid-template: auto auto / 60% 70%;
+}
+.deliveryBlockInnerImg{
+
+}
+.deliveryBlockInnerText{
+    font-size: 14px;
+}
+.deliveryBlockInner{
+    display: flex;
+    align-items: center;
+}
+.confirmBtn{
+
+}
+@media (max-width: 1200px){
+    .cartMainContainer1{
+        display: grid;
+        grid-template: auto / 310px 625px
+    }
+    .deliveryMethod{
+        width: 599px;
+    }
+}
+@media (max-width: 960px){
+    .cartMainContainer1{
+        display: grid;
+        grid-template: auto / 250px 350px
+    }
+    .cartMain1{
+        width: 220px;
+    }
+    .deliveryMethod{
+        width: 599px;
+    }
+
+}
+@media (max-width: 660px){
+    .cartMainContainer1{
+        display: grid;
+        grid-template: auto auto / auto;
+    }
+    .cartMain1{
+        width: 100%;
+    }
+}
+@media (max-width: 420px){
+    .cartMainContainer1{
+        display: grid;
+        grid-template: auto auto / auto;
+    }
+    .cartMain1{
+        width: 100%;
+    }
+}
+@media (max-width: 315px){
+    
+}

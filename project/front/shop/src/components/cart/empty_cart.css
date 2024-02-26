@@ -1,0 +1,37 @@
+.emptyText{
+    font-size: 14px;
+    display: block;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+.emptyButton{
+    width: 186px;
+    height: 40px;
+    border: 1.5px solid #757575;
+    font-family: 'RF Dewi';
+    font-size: 14px;
+    display: block;
+    background-color: white;
+    transition: background-color 300ms ease;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+.emptyButton:hover{
+    background-color: rgb(222, 220, 220);
+}
+.emptyButton:active{
+    margin-top: 18px;
+    margin-bottom: 18px;
+
+}
+.emptyMainContainer{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 200px;
+    margin-top: 16px;
+}
+#emptyCart1{
+    display: none;
+}
+

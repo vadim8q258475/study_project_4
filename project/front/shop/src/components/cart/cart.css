@@ -1,0 +1,224 @@
+.cartMainContainer{
+    display: grid;
+    grid-template: auto / 400px 760px
+}
+.cartFooterProducts{
+    display: grid;
+    grid-template: 1fr / repeat(6, 1fr)
+}
+.cartMain{
+    padding-right: 24px;
+}
+.cartAside{
+    padding-left: 24px;
+    overflow: hidden;
+}
+.cartHeader{
+    font-size: 22px;
+    padding-top: 18px;
+    margin-bottom: 5px;
+}
+.cartPath{
+    width: auto;
+    height: auto;
+    font-size: 12px;
+    color: #757575;
+    margin-bottom: 20px;
+}
+hr{
+    margin-bottom: 20px;
+}
+.flexTotal{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.totalText{
+    font-size: 18px;
+    display: inline;
+}
+.totalTextGrey{
+    font-size: 18px;
+    display: inline;
+    text-decoration: line-through;
+    color: #b3b2b2;
+    margin-left: 8px;
+    display: none
+}
+.cartPromoInputContainer{
+    display: flex;
+    justify-content: space-between;
+}
+.cartFakePromoInput{
+    width: auto;
+    height: 40px;
+    border: 1.5px solid black;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.cartFakePromoButton{
+    height: 41px;
+    width: 150px;
+    max-width: 150px;
+    border: 1.5px solid rgb(97, 96, 96);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+    font-size: 14px;
+    transition: background-color 300ms ease;
+    cursor: pointer;
+    background-color: white;
+    font-family: 'RF Dewi';
+    display: inline-flex;
+    align-content: center;
+    justify-content: center;
+}
+.cartFakePromoButton:hover{
+    background-color: #ebe9e9;
+}
+.cartFakePromoButton:active{
+    margin-top: 2px;
+}
+.cartTrueInput{
+    width: 100%;
+}
+.backToShop{
+    font-size: 12px;
+}
+.cartFooterHeader{
+    margin-top: 40px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.cartFooterProducts{
+    display: grid;
+    grid-template: 1fr / repeat(6, 1fr);
+}
+.cartContinueContainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.cartContinueButton{
+    height: 38px;
+    width: 364px;
+    border: 1.5px solid rgb(97, 96, 96);
+    font-size: 14px;
+    background-color: rgb(41, 39, 52);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 300ms ease;
+    cursor: pointer;
+    margin-bottom: 30px;
+    font-family: 'RF Dewi';
+}
+.cartContinueButton:hover{
+    background-color: rgb(98, 96, 108);
+}
+.cartContinueButton:active{
+    margin-top: 2px;
+    margin-bottom: 28px;
+}
+.cartContinueButton:active .cartContinueTextContainer{
+    margin-top: 0px;
+}
+.cartContinueTextContainer{
+    display: grid;
+    grid-template: 1fr / auto auto;
+    width: 50%;
+    margin-bottom: 30px;
+}
+.lockImgContainer{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+    margin-left: 5px;
+}
+.cartContinueText{
+    display: inline-block;
+    font-size: 12px;
+}
+.bigCartText{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.cartText{
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+.emailErrorMessage{
+    color: #e56363;
+    font-size: 12px;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    font-weight: 700;
+    display: none
+}
+.smallTotalText{
+    font-size: 12px;
+    color: #757575
+}   
+.smallFlexTotal{
+    display: none;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+.changeField{
+    display: inline-block
+}
+
+@media (max-width: 1200px){
+    .cartMainContainer{
+        display: grid;
+        grid-template: auto / 390px 550px
+    }
+    .cartFooterProducts{
+        display: grid;
+        grid-template: 1fr / repeat(5, 1fr)
+    }
+}
+@media (max-width: 960px){
+    .cartMainContainer{
+        display: grid;
+        grid-template: auto / 300px 300px
+    }
+    .cartContinueTextContainer{
+        display: none;
+    }
+    .cartFooterProducts{
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr)
+    }
+}
+@media (max-width: 420px){
+
+}
+@media (max-width: 660px){
+    .cartMainContainer{
+        display: grid;
+        grid-template: auto  auto / auto
+    }
+    .cartMain{
+        padding-right: 0px;
+    }
+    .cartAside{
+        padding-left: 0px;
+    }
+    .cartFooterProducts{
+        display: grid;
+        grid-template: 1fr / repeat(2, 1fr)
+    }
+}
+@media (max-width: 315px){
+    .cartFooterProducts{
+        display: grid;
+        grid-template: 1fr / repeat(1, 1fr)
+    }
+}

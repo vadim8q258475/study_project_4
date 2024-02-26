@@ -1,0 +1,22 @@
+.cartFakePromoInput{
+    width: 250px;
+    height: 40px;
+    border-color: rgb(224, 221, 221);
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    box-shadow: 0 0px 0px rgb(0 0 0 / 8%) inset;
+}
+.cartFakePromoInput:hover{
+    border: 1px solid rgb(97, 96, 96);
+}
+.cartTrueInput{
+    width: 100%;
+    border: none;
+    font-family: 'RF Dewi';
+    font-size: 14px;
+    padding-right: 0px;
+}
+.cartTrueInput:focus{
+    outline: none;
+}

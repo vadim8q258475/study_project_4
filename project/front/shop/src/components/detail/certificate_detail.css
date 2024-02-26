@@ -1,0 +1,247 @@
+.detail1{
+    display: grid;
+    grid-template: minmax(100px, 800px) auto / 2fr 1fr;
+    grid-template-areas: 'main aside' 'footer footer';
+    overflow: visible;
+}
+.detailGallery1{
+    grid-area: main;
+    display: grid;
+    grid-template: 1fr 2fr / 1fr;
+}
+.detailInfoContainer{
+    grid-area: aside;
+    position: relative;
+}
+.mainGallery1{
+    display: grid;
+    grid-template: 1fr / 1fr;
+}
+.subGallery{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr/ 1fr 1fr;
+}
+.detailInfo{
+    position: sticky;
+    top: 90px;
+    right: 0px;
+    padding-left: 30px;
+}
+.detailFooter{
+    grid-area: footer;
+}
+.detailNameContainer{
+    width: 280px;
+    height: auto;
+    margin-bottom: 16px;
+}
+.detailName{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 40px;
+}
+.detailPath{
+    font-size: 12px;
+    color: #757575;
+    display: inline-block;
+}
+.detailPrice{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 13px;
+    margin-bottom: 13px;
+}
+.detailDrop1{
+    margin-top: 18px;
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+.detailButton{
+    width: 296px;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    font-size: 14px;
+    font-family: 'RF Dewi';
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 200ms ease;
+}
+.detailButton:hover{
+    background: #ff7e2f;
+}
+.detailButton:active{
+    margin-top: 2px;
+    margin-bottom: 13px;
+}
+.detailSize{
+    width: 35px;
+    height: 35px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+    border: 1.5px solid black;
+}
+.detailSize:hover{
+    box-shadow: 2px -1px 34px rgba(0, 0, 0, 0.28);
+    background-color: #e4e2e2;
+}
+.detailDropContent{
+    font-size: 12px;
+    background-color: none;
+}
+.detaildropContainer{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    transition: max-height 300ms ease;
+    overflow: hidden;
+    max-height: 14.4px;
+}
+.detailFooterHeader{
+    margin-top: 40px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+.detailFooterProducts{
+    display: grid;
+    grid-template: 1fr / repeat(6, 1fr);
+}
+.detailAddedButtonContainer{
+
+}
+.detailAddedButton1{
+    width: 296px;
+    height: 40px;
+    background-color: white;
+    color: black;
+    font-size: 14px;
+    font-family: 'RF Dewi';
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 200ms ease;
+    border: 1px solid #a09f9f;
+}
+.detailAddedButton2{
+    width: 296px;
+    height: 40px;
+    background-color: #333333;
+    color: white;
+    font-size: 14px;
+    font-family: 'RF Dewi';
+    margin-bottom: 15px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 200ms ease;
+}
+.detailAddedButton1:hover{
+    background: #ff7e2f;
+}
+.detailAddedButton2:hover{
+    background-color: #6a6a6a;
+}
+.detailAddedButton1:active{
+    margin-top: 2px;
+    margin-bottom: 13px;
+}
+.detailAddedButton2:active{
+    margin-top: 2px;
+    margin-bottom: 13px;
+}
+#detailAddedButton11{
+    display: none;
+    transition: all 300ms ease;
+}
+#detailAddedButton21{
+    display: none;
+    transition: all 300ms ease;
+}
+#detailBtnText{
+    display: block;
+    transition: opacity 300ms ease;
+    opacity: 1;
+    transition: all 300ms ease;
+}
+#detailBtnText2{
+    display: block;
+    transition: opacity 300ms ease;
+    opacity: 1;
+    transition: all 300ms ease;
+}
+#detailBtnText3{
+    display: block;
+    transition: opacity 300ms ease;
+    opacity: 1;
+    transition: all 300ms ease;
+}
+.btnImgSuc{
+    margin-top: 3px;
+    width: 22px;
+    height: 26px;
+    opacity: 0;
+    display: none;
+    transition: all 300ms ease;
+    margin-left: 125px;
+}
+@media (max-width: 1200px){
+
+}
+@media (max-width: 960px){
+    .detailFooterProducts{
+        display: grid;
+        grid-template: 1fr 1fr / repeat(3, 1fr);
+    }
+    .detailButton{
+        width: 238px;
+    }
+    .detail1{
+        display: grid;
+        grid-template: auto auto / 350px 270px;
+        grid-template-areas: 'main aside' 'footer footer';
+        overflow: visible;
+    }
+}
+@media (max-width: 660px){
+    .detail1{
+        display: grid;
+        grid-template: auto  / 100%;
+        grid-template-areas: 'main' 'aside' 'footer';
+        overflow: visible;
+    }
+    .detailFooterProducts{
+        display: grid;
+        grid-template: 1fr 1fr 1fr / repeat(2, 1fr);
+    }
+
+    .subGallery{
+        display: none
+    }
+    .detailGallery1{
+        grid-area: main;
+        display: grid;
+        grid-template: 1fr / 1fr;
+    }
+    .detailInfo{
+        position: static;
+        padding-left: 0px;
+    }
+    .detailButton{
+        width: 100%
+    }
+
+
+
+    
+}
+@media (max-width: 315px){
+    .detailFooterProducts{
+        display: grid;
+        grid-template: 1fr 1fr 1fr 1fr / 1fr;
+    }
+}

@@ -1,0 +1,29 @@
+.detailSlider{
+    display: grid;
+    grid-template: auto/ 128px 1fr 128px;
+    width: 100vw;
+    height: 100vh;
+}
+.detailSliderMain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.detailSliderImgContainer{
+    width: 648px;
+    height: 648px;
+    border: 1px solid black;
+}
+.detailSliderImgFooter{
+    height: 44px;
+}
+.detailSliderImg{
+    max-width: 607px;
+    max-height: 607px;
+    height: 100%;
+    width: 100%;
+}
+#detailSliderImgFooter1{
+    position: fixed;
+    top: 0px;
+}
